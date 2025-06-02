@@ -1432,13 +1432,6 @@ end
 -- UI Setup with WindUI
 local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 
-local function GetThemeProperty(property)
-    if not WindUI or not WindUI.Themes or not WindUI.Themes.Current or not WindUI.Themes.Current[property] then
-        warn("Theme property '" .. property .. "' is nil, using fallback")
-        return Color3.fromRGB(255, 255, 255) -- Default fallback
-    end
-    return WindUI.Themes.Current[property]
-end
 
 local function gradient(text, startColor, endColor)
     local result = ""
