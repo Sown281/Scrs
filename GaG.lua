@@ -1,4 +1,3 @@
-setclipboard("https://discord.gg/dmBzVaRrD3")
 -- Services
 local Workspace = game:GetService("Workspace")
 local Players = game:GetService("Players")
@@ -1188,13 +1187,13 @@ end
 -- UI Setup
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
-    Name = "Grow a Garden | PolleserHub",
+    Name = "Grow a Garden | Source 1",
     Icon = 0,
-    LoadingTitle = "Grow a Garden | PolleserHub",
-    LoadingSubtitle = "by Polleser",
+    LoadingTitle = "Grow a Garden | Loading...",
+    LoadingSubtitle = "by learning dev",
     Theme = "Ocean",
     ConfigurationSaving = { Enabled = true, FolderName = nil, FileName = "Polleser Hub" },
-    Discord = { Enabled = true, Invite = "dmBzVaRrD3", RememberJoins = true },
+    Discord = { Enabled = false, Invite = "dmBzVaRrD3", RememberJoins = true },
     KeySystem = false,
     KeySettings = {
         Title = "Polleser Hub Key System",
