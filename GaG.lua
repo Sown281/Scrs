@@ -1,3 +1,6 @@
+-- ts file was generated at discord.gg/25ms
+
+
 setclipboard("https://discord.gg/dmBzVaRrD3")
 
 -- Services
@@ -44,11 +47,109 @@ local RANGE = 50
 local flySpeed = 48
 
 -- Item Lists
-local seedItems = {"Carrot", "Strawberry", "Blueberry", "Orange Tulip", "Tomato", "Corn", "Daffodil", "Watermelon", "Pumpkin", "Apple", "Bamboo", "Coconut", "Cactus", "Dragon Fruit", "Mango", "Grape", "Mushroom", "Pepper", "Cacao", "Beanstalk"}
-local gearItems = {"Watering Can", "Trowel", "Recall Wrench", "Basic Sprinkler", "Advanced Sprinkler", "Godly Sprinkler", "Lightning Rod", "Master Sprinkler", "Favorite Tool", "Harvest Tool"}
-local TwilightItems = {"Night Egg", "Night Seed Pack", "Twilight Crate", "Star Caller", "Moon Cat", "Celestiberry", "Moon Mango"}
-local mutationOptions = {"Wet", "Gold", "Frozen", "Rainbow", "Choc", "Chilled", "Shocked", "Moonlit", "Bloodlit", "Celestial", "Plasma", "Disco", "Zombified"}
-local seedNames = {"Apple", "Banana", "Bamboo", "Blueberry", "Candy Blossom", "Candy Sunflower", "Carrot", "Cactus", "Chocolate Carrot", "Chocolate Sprinkler", "Coconut", "Corn", "Cranberry", "Cucumber", "Cursed Fruit", "Candy Blossom", "Daffodil", "Dragon Fruit", "Durian", "Easter Egg", "Eggplant", "Grape", "Lemon", "Lotus", "Mango", "Mushroom", "Pepper", "Orange Tulip", "Papaya", "Passionfruit", "Peach", "Pear", "Pineapple", "Pumpkin", "Raspberry", "Red Lollipop", "Soul Fruit", "Strawberry", "Tomato", "Venus Fly Trap", "Watermelon", "Cacao", "Beanstalk"}
+local seedItems = {
+    "Carrot",
+    "Strawberry",
+    "Blueberry",
+    "Orange Tulip",
+    "Tomato",
+    "Corn",
+    "Daffodil",
+    "Watermelon",
+    "Pumpkin",
+    "Apple",
+    "Bamboo",
+    "Coconut",
+    "Cactus",
+    "Dragon Fruit",
+    "Mango",
+    "Grape",
+    "Mushroom",
+    "Pepper",
+    "Cacao",
+    "Beanstalk"
+}
+local gearItems = {
+    "Watering Can",
+    "Trowel",
+    "Recall Wrench",
+    "Basic Sprinkler",
+    "Advanced Sprinkler",
+    "Godly Sprinkler",
+    "Lightning Rod",
+    "Master Sprinkler",
+    "Favorite Tool",
+    "Harvest Tool"
+}
+local TwilightItems = {
+    "Night Egg",
+    "Night Seed Pack",
+    "Twilight Crate",
+    "Star Caller",
+    "Moon Cat",
+    "Celestiberry",
+    "Moon Mango"
+}
+local mutationOptions = {
+    "Wet",
+    "Gold",
+    "Frozen",
+    "Rainbow",
+    "Choc",
+    "Chilled",
+    "Shocked",
+    "Moonlit",
+    "Bloodlit",
+    "Celestial",
+    "Plasma",
+    "Disco",
+    "Zombified"
+}
+local seedNames = {
+    "Apple",
+    "Banana",
+    "Bamboo",
+    "Blueberry",
+    "Candy Blossom",
+    "Candy Sunflower",
+    "Carrot",
+    "Cactus",
+    "Chocolate Carrot",
+    "Chocolate Sprinkler",
+    "Coconut",
+    "Corn",
+    "Cranberry",
+    "Cucumber",
+    "Cursed Fruit",
+    "Candy Blossom",
+    "Daffodil",
+    "Dragon Fruit",
+    "Durian",
+    "Easter Egg",
+    "Eggplant",
+    "Grape",
+    "Lemon",
+    "Lotus",
+    "Mango",
+    "Mushroom",
+    "Pepper",
+    "Orange Tulip",
+    "Papaya",
+    "Passionfruit",
+    "Peach",
+    "Pear",
+    "Pineapple",
+    "Pumpkin",
+    "Raspberry",
+    "Red Lollipop",
+    "Soul Fruit",
+    "Strawberry",
+    "Tomato",
+    "Venus Fly Trap",
+    "Watermelon",
+    "Cacao",
+    "Beanstalk"
+}
 
 -- State Variables
 local autoBuyEnabled = false
@@ -72,14 +173,46 @@ local autoMoon = false
 local EasterShopBuyEnabled = false
 local Autoegg_autoBuyEnabled = false
 local Autoegg_firstRun = true
-local selectedSeeds = {"Beanstalk", "Pepper", "Cacao"}
-local SelectedSeeds = {"Beanstalk", "Pepper", "Cacao"}
-local selectedGears = {"Master Sprinkler", "Godly Sprinkler", "Harvest Tool"}
-local selectedTwilight = {"Moon Mango", "Celestiberry", "Twilight Crate"}
-local EasterShopSelectedItems = {}, {}, {}, {}, EasterShopItems
-local selectedMutations = {"Gold", "Frozen", "Rainbow", "Choc", "Chilled", "Shocked", "Moonlit", "Bloodlit", "Celestial"}
+local selectedSeeds = {
+    "Beanstalk",
+    "Pepper",
+    "Cacao"
+}
+local SelectedSeeds = {
+    "Beanstalk",
+    "Pepper",
+    "Cacao"
+}
+local selectedGears = {
+    "Master Sprinkler",
+    "Godly Sprinkler",
+    "Harvest Tool"
+}
+local selectedTwilight = {
+    "Moon Mango",
+    "Celestiberry",
+    "Twilight Crate"
+}
+local EasterShopSelectedItems = {}
+local selectedMutations = {
+    "Gold",
+    "Frozen",
+    "Rainbow",
+    "Choc",
+    "Chilled",
+    "Shocked",
+    "Moonlit",
+    "Bloodlit",
+    "Celestial"
+}
 local state = {
-    selectedMutations = {"Bloodlit", "Celestial", "Disco", "Zombified", "Plasma"},
+    selectedMutations = {
+        "Bloodlit",
+        "Celestial",
+        "Disco",
+        "Zombified",
+        "Plasma"
+    },
     espEnabled = false,
     espBillboards = {},
     espHighlights = {},
@@ -115,7 +248,9 @@ gearicon.ImageColor3 = Color3.fromRGB(255, 255, 255)
 
 -- Utility Functions
 local function parseMoney(moneyStr)
-    if not moneyStr then return 0 end
+    if not moneyStr then
+        return 0
+    end
     moneyStr = tostring(moneyStr):gsub("ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢", ""):gsub(",", ""):gsub(" ", ""):gsub("%$", "")
     local multiplier = 1
     if moneyStr:lower():find("k") then
@@ -133,7 +268,7 @@ local function getPlayerMoney()
 end
 
 local function isInventoryFull()
-    return #lp.Backpack:GetChildren() >= 200
+    return # lp.Backpack:GetChildren() >= 200
 end
 
 -- Auto Farm Functions
@@ -160,33 +295,51 @@ local function updateFarmData()
 end
 
 local function glitchTeleport(pos)
-    if not lp.Character then return end
+    if not lp.Character then
+        return
+    end
     local root = lp.Character:FindFirstChild("HumanoidRootPart")
-    if not root then return end
-    local tween = TweenService:Create(root, TweenInfo.new(0.15, Enum.EasingStyle.Linear), {CFrame=CFrame.new(pos + Vector3.new(0, 5, 0))})
+    if not root then
+        return
+    end
+    local tween = TweenService:Create(root, TweenInfo.new(0.15, Enum.EasingStyle.Linear), {
+        CFrame = CFrame.new(pos + Vector3.new(0, 5, 0))
+    })
     tween:Play()
 end
 
 local function instantFarm()
-    if farmThread then task.cancel(farmThread) end
+    if farmThread then
+        task.cancel(farmThread)
+    end
     farmThread = task.spawn(function()
         while autoFarmEnabled do
             while isInventoryFull() do
-                if not autoFarmEnabled then return end
+                if not autoFarmEnabled then
+                    return
+                end
                 task.wait(1)
             end
-            if not autoFarmEnabled then return end
+            if not autoFarmEnabled then
+                return
+            end
             updateFarmData()
             for _, part in pairs(plants) do
-                if not autoFarmEnabled then return end
-                if isInventoryFull() then break end
+                if not autoFarmEnabled then
+                    return
+                end
+                if isInventoryFull() then
+                    break
+                end
                 if part and part.Parent then
                     local prompt = part:FindFirstChildOfClass("ProximityPrompt")
                     if prompt then
                         glitchTeleport(part.Position)
                         task.wait(0.2)
                         for _, farm in pairs(farms) do
-                            if not autoFarmEnabled or isInventoryFull() then break end
+                            if not autoFarmEnabled or isInventoryFull() then
+                                break
+                            end
                             for _, obj in pairs(farm:GetDescendants()) do
                                 if obj:IsA("ProximityPrompt") then
                                     local str = tostring(obj.Parent)
@@ -196,12 +349,16 @@ local function instantFarm()
                                 end
                             end
                         end
-                        if not autoFarmEnabled then return end
+                        if not autoFarmEnabled then
+                            return
+                        end
                         task.wait(0.2)
                     end
                 end
             end
-            if autoFarmEnabled then task.wait(0.1) end
+            if autoFarmEnabled then
+                task.wait(0.1)
+            end
         end
     end)
 end
@@ -209,7 +366,9 @@ end
 -- Auto Collect Functions
 local function isValidPrompt(prompt)
     local parent = prompt.Parent
-    if not parent then return false end
+    if not parent then
+        return false
+    end
     local name = parent.Name:lower()
     return not (name:find("sign") or name:find("core"))
 end
@@ -217,7 +376,9 @@ end
 local function getNearbyPrompts()
     local nearby = {}
     local hrp = lp.Character and lp.Character:FindFirstChild("HumanoidRootPart")
-    if not hrp then return nearby end
+    if not hrp then
+        return nearby
+    end
     
     for _, farm in pairs(workspace.Farm:GetChildren()) do
         local data = farm:FindFirstChild("Important") and farm.Important:FindFirstChild("Data")
@@ -239,7 +400,9 @@ local function getNearbyPrompts()
 end
 
 local function fastClickFarm()
-    if fastClickThread then task.cancel(fastClickThread) end
+    if fastClickThread then
+        task.cancel(fastClickThread)
+    end
     fastClickThread = task.spawn(function()
         while fastClickEnabled do
             if isInventoryFull() then
@@ -248,8 +411,12 @@ local function fastClickFarm()
             end
             local prompts = getNearbyPrompts()
             for _, prompt in pairs(prompts) do
-                if not fastClickEnabled then return end
-                if isInventoryFull() then break end
+                if not fastClickEnabled then
+                    return
+                end
+                if isInventoryFull() then
+                    break
+                end
                 fireproximityprompt(prompt, 1)
                 task.wait(CLICK_DELAY)
             end
@@ -261,13 +428,19 @@ end
 -- Auto Sell Functions
 local function sellItems()
     local steven = workspace.NPCS:FindFirstChild("Steven")
-    if not steven then return false end
+    if not steven then
+        return false
+    end
     
     local char = lp.Character
-    if not char then return false end
+    if not char then
+        return false
+    end
     
     local hrp = char:FindFirstChild("HumanoidRootPart")
-    if not hrp then return false end
+    if not hrp then
+        return false
+    end
     
     local originalPosition = hrp.CFrame
     hrp.CFrame = steven.HumanoidRootPart.CFrame * CFrame.new(0, 3, 3)
@@ -287,7 +460,9 @@ end
 -- Harvest Functions
 local function FindGarden()
     local farm = workspace:FindFirstChild("Farm")
-    if not farm then return nil end
+    if not farm then
+        return nil
+    end
     
     for _, plot in ipairs(farm:GetChildren()) do
         local data = plot:FindFirstChild("Important") and plot.Important:FindFirstChild("Data")
@@ -305,33 +480,51 @@ local function CanHarvest(part)
 end
 
 local function Harvest()
-    if not HarvestEnabled then return end
-    if isInventoryFull() then return end
+    if not HarvestEnabled then
+        return
+    end
+    if isInventoryFull() then
+        return
+    end
     
     local garden = FindGarden()
-    if not garden then return end
+    if not garden then
+        return
+    end
     
     local plants = garden:FindFirstChild("Important") and garden.Important:FindFirstChild("Plants_Physical")
-    if not plants then return end
+    if not plants then
+        return
+    end
     
     for _, plant in ipairs(plants:GetChildren()) do
-        if not HarvestEnabled then break end
+        if not HarvestEnabled then
+            break
+        end
         local fruits = plant:FindFirstChild("Fruits")
         if fruits then
             for _, fruit in ipairs(fruits:GetChildren()) do
-                if not HarvestEnabled then break end
+                if not HarvestEnabled then
+                    break
+                end
                 for _, part in ipairs(fruit:GetChildren()) do
-                    if not HarvestEnabled then break end
+                    if not HarvestEnabled then
+                        break
+                    end
                     if part:IsA("BasePart") and CanHarvest(part) then
                         local prompt = part.ProximityPrompt
                         local pos = part.Position + Vector3.new(0, 3, 0)
                         if lp.Character and lp.Character.PrimaryPart then
                             lp.Character:SetPrimaryPartCFrame(CFrame.new(pos))
                             task.wait(0.1)
-                            if not HarvestEnabled then break end
+                            if not HarvestEnabled then
+                                break
+                            end
                             prompt:InputHoldBegin()
                             task.wait(0.1)
-                            if not HarvestEnabled then break end
+                            if not HarvestEnabled then
+                                break
+                            end
                             prompt:InputHoldEnd()
                             task.wait(0.1)
                         end
@@ -365,10 +558,14 @@ local function Fly(state)
     flyEnabled = state
     if flyEnabled then
         local character = lp.Character
-        if not character or not character:FindFirstChild("HumanoidRootPart") then return end
+        if not character or not character:FindFirstChild("HumanoidRootPart") then
+            return
+        end
         
         local humanoid = character:FindFirstChildOfClass("Humanoid")
-        if not humanoid then return end
+        if not humanoid then
+            return
+        end
         
         bodyGyro = Instance.new("BodyGyro")
         bodyVelocity = Instance.new("BodyVelocity")
@@ -384,7 +581,9 @@ local function Fly(state)
         
         flightConnection = RunService.Heartbeat:Connect(function()
             if not flyEnabled or not character:FindFirstChild("HumanoidRootPart") then
-                if flightConnection then flightConnection:Disconnect() end
+                if flightConnection then
+                    flightConnection:Disconnect()
+                end
                 return
             end
             
@@ -411,15 +610,19 @@ local function Fly(state)
                 moveVec = moveVec + Vector3.new(0, flySpeed, 0)
             end
             if UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) then
-                moveVec = moveVec + Vector3.new(0, -flySpeed, 0)
+                moveVec = moveVec + Vector3.new(0, - flySpeed, 0)
             end
             
             bodyVelocity.velocity = moveVec
             bodyGyro.cframe = cam
         end)
     else
-        if bodyVelocity then bodyVelocity:Destroy() end
-        if bodyGyro then bodyGyro:Destroy() end
+        if bodyVelocity then
+            bodyVelocity:Destroy()
+        end
+        if bodyGyro then
+            bodyGyro:Destroy()
+        end
         
         local character = lp.Character
         if character then
@@ -554,8 +757,10 @@ local function Autoegg_autoBuyEggs()
             Autoegg_firstRun = false
         end
 
-        if not lp.Character or not lp.Character:FindFirstChild("HumanoidRootPart") then return end
-        lp.Character.HumanoidRootPart.CFrame = CFrame.new(-255.12291, 2.99999976, -1.13749218, -0.0163238496, 1.05261321e-07, 0.999866784, -5.92361182e-09, 1, -1.0537206e-07, -0.999866784, -7.64290053e-09, -0.0163238496)
+        if not lp.Character or not lp.Character:FindFirstChild("HumanoidRootPart") then
+            return
+        end
+        lp.Character.HumanoidRootPart.CFrame = CFrame.new(- 255.12291, 2.99999976, - 1.13749218, - 0.0163238496, 1.05261321e-07, 0.999866784, - 5.92361182e-09, 1, - 1.0537206e-07, - 0.999866784, - 7.64290053e-09, - 0.0163238496)
 
         Autoegg_setAlwaysShow()
 
@@ -677,8 +882,12 @@ local function isInsideFarm(part)
 end
 
 local function handleNewPrompt(prompt)
-    if not prompt:IsA("ProximityPrompt") then return end
-    if not isInsideFarm(prompt) then return end
+    if not prompt:IsA("ProximityPrompt") then
+        return
+    end
+    if not isInsideFarm(prompt) then
+        return
+    end
     
     if not promptTracker[prompt] then
         promptTracker[prompt] = {
@@ -759,7 +968,9 @@ local function processBackpack()
 end
 
 local function setupAutoFavorite()
-    if connection then connection:Disconnect() end
+    if connection then
+        connection:Disconnect()
+    end
     local backpack = lp:WaitForChild("Backpack")
     connection = backpack.ChildAdded:Connect(function(tool)
         task.wait(0.1)
@@ -840,15 +1051,19 @@ local function ServerHop()
     local cursor = nil
     repeat
         local url = "https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100"
-        if cursor then url = url .. "&cursor=" .. cursor end
+        if cursor then
+            url = url .. "&cursor=" .. cursor
+        end
         local data = HttpService:JSONDecode(game:HttpGet(url))
         for _, server in ipairs(data.data) do
             table.insert(servers, server.id)
         end
         cursor = data.nextPageCursor
-    until not cursor or #servers > 0
-    if #servers == 0 then return end
-    TeleportService:TeleportToPlaceInstance(game.PlaceId, servers[math.random(1, #servers)], lp)
+    until not cursor or # servers > 0
+    if # servers == 0 then
+        return
+    end
+    TeleportService:TeleportToPlaceInstance(game.PlaceId, servers[math.random(1, # servers)], lp)
 end
 
 -- Auto Plant Functions
@@ -864,7 +1079,10 @@ local function getCurrentSeedsInBackpack()
         if tool:IsA("Tool") then
             local base = tool.Name:match("^(.-) Seed")
             if base and table.find(SelectedSeeds, base) then
-                result[#result + 1] = {BaseName = base, Tool = tool}
+                result[# result + 1] = {
+                    BaseName = base,
+                    Tool = tool
+                }
             end
         end
     end
@@ -877,7 +1095,9 @@ local function plantEquippedSeed(seedName)
 end
 
 local function equipTool(tool)
-    if not tool or not tool:IsDescendantOf(lp.Backpack) then return end
+    if not tool or not tool:IsDescendantOf(lp.Backpack) then
+        return
+    end
     pcall(function()
         lp.Character.Humanoid:UnequipTools()
         task.wait(0.1)
@@ -889,7 +1109,9 @@ local function equipTool(tool)
 end
 
 local function startAutoPlanting()
-    if CurrentlyPlanting then return end
+    if CurrentlyPlanting then
+        return
+    end
     CurrentlyPlanting = true
     task.spawn(function()
         while AutoPlanting do
@@ -897,12 +1119,16 @@ local function startAutoPlanting()
             for _, data in ipairs(seeds) do
                 local tool = data.Tool
                 local seedName = data.BaseName
-                if not table.find(SelectedSeeds, seedName) then continue end
+                if not table.find(SelectedSeeds, seedName) then
+                    continue
+                end
                 if tool and tool:IsA("Tool") and tool:IsDescendantOf(lp.Backpack) then
                     equipTool(tool)
                     task.wait(0.2)
                     while AutoPlanting and lp.Character:FindFirstChild(tool.Name) do
-                        if not table.find(SelectedSeeds, seedName) then break end
+                        if not table.find(SelectedSeeds, seedName) then
+                            break
+                        end
                         plantEquippedSeed(seedName)
                         task.wait(0.1)
                     end
@@ -917,7 +1143,9 @@ end
 -- Destroy Others Farm Function
 local function DestroyOthersFarm()
     local farms = workspace:FindFirstChild("Farm")
-    if not farms then return end
+    if not farms then
+        return
+    end
     for _, farm in pairs(farms:GetChildren()) do
         local data = farm:FindFirstChild("Important") and farm.Important:FindFirstChild("Data")
         if data and data:FindFirstChild("Owner") and data.Owner.Value ~= lp.Name then
@@ -941,14 +1169,18 @@ local function createESP(fruitModel)
         state.espHighlights[fruitModel]:Destroy()
         state.espHighlights[fruitModel] = nil
     end
-    if not state.espEnabled then return end
+    if not state.espEnabled then
+        return
+    end
     local activeMutations = {}
     for _, mutation in ipairs(mutationOptions) do
         if table.find(state.selectedMutations, mutation) and fruitModel:GetAttribute(mutation) then
             table.insert(activeMutations, mutation)
         end
     end
-    if #activeMutations == 0 then return end
+    if # activeMutations == 0 then
+        return
+    end
     local text = fruitModel.Name .. " - " .. table.concat(activeMutations, ", ")
     local espColor = mutationColors[activeMutations[1]] or Color3.fromRGB(255, 255, 255)
     local highlight = Instance.new("Highlight")
@@ -988,7 +1220,9 @@ local function updateESP()
     end
     table.clear(state.espBillboards)
     table.clear(state.espHighlights)
-    if not state.espEnabled or not workspace:FindFirstChild("Farm") then return end
+    if not state.espEnabled or not workspace:FindFirstChild("Farm") then
+        return
+    end
     local farms = {}
     for _, farm in ipairs(workspace.Farm:GetChildren()) do
         local data = farm:FindFirstChild("Important") and farm.Important:FindFirstChild("Data")
@@ -1044,7 +1278,7 @@ local function updateMutationCounts()
                                         table.insert(mutationsFound, mutation)
                                     end
                                 end
-                                if #mutationsFound > 0 and not notifiedFruits[fruitId] and state.espEnabled then
+                                if # mutationsFound > 0 and not notifiedFruits[fruitId] and state.espEnabled then
                                     notifiedFruits[fruitId] = true
                                     sendWebhookNotification(plantModel.Name, mutationsFound, lp.Name)
                                 end
@@ -1061,8 +1295,10 @@ local function updateMutationCounts()
             countText = countText .. mutation .. ": " .. mutationCounts[mutation] .. ", "
         end
     end
-    countText = countText:sub(1, -3)
-    if countText == "" then countText = "No mutations found" end
+    countText = countText:sub(1, - 3)
+    if countText == "" then
+        countText = "No mutations found"
+    end
     return countText
 end
 
@@ -1071,15 +1307,21 @@ local processedMutations = {}
 
 -- Webhook Functions
 local function sendWebhook(data)
-    if not data or type(data) ~= "table" then return end
+    if not data or type(data) ~= "table" then
+        return
+    end
     local HttpService = game:GetService("HttpService")
     local json = HttpService:JSONEncode(data)
     local request = (syn and syn.request) or (http and http.request) or (http_request) or (request)
-    if not request then return end
+    if not request then
+        return
+    end
     local success, result = pcall(request, {
         Url = state.webhookUrl,
         Method = "POST",
-        Headers = {["Content-Type"] = "application/json"},
+        Headers = {
+            ["Content-Type"] = "application/json"
+        },
         Body = json
     })
     if not success then
@@ -1096,7 +1338,9 @@ local function sendWebhook(data)
 end
 
 local function sendWebhookNotification(fruitName, mutation, farmName)
-    if state.webhookUrl == "" then return end
+    if state.webhookUrl == "" then
+        return
+    end
 
     local webhookData = {
         content = "",
@@ -1104,10 +1348,18 @@ local function sendWebhookNotification(fruitName, mutation, farmName)
             {
                 title = "ÃƒÂ°Ã…Â¸Ã…â€™Ã‚Â· Mutation Detected! ÃƒÂ°Ã…Â¸Ã…â€™Ã‚Â·",
                 description = string.format("A **%s** mutation was found!", mutation),
-                color = 0x00FF00,
+                color = 65280,
                 fields = {
-                    { name = "Fruit", value = fruitName or "Unknown", inline = true },
-                    { name = "Farm", value = farmName or "Unknown", inline = true }
+                    {
+                        name = "Fruit",
+                        value = fruitName or "Unknown",
+                        inline = true
+                    },
+                    {
+                        name = "Farm",
+                        value = farmName or "Unknown",
+                        inline = true
+                    }
                 },
                 timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ")
             }
@@ -1119,7 +1371,9 @@ end
 
 -- Function to check farms and send notifications for new mutations
 local function checkForMutations()
-    if not workspace:FindFirstChild("Farm") or state.webhookUrl == "" or #state.selectedMutations == 0 then return end
+    if not workspace:FindFirstChild("Farm") or state.webhookUrl == "" or # state.selectedMutations == 0 then
+        return
+    end
 
     local farms = {}
     for _, farm in ipairs(workspace.Farm:GetChildren()) do
@@ -1132,10 +1386,12 @@ local function checkForMutations()
     for _, farm in ipairs(farms) do
         local plantsFolder = farm.Important:FindFirstChild("Plants_Physical")
         if plantsFolder then
-            for _, plantModel in ipairs(plantsFolder:GetChildren()) do plantModel:IsA("Model")
+            for _, plantModel in ipairs(plantsFolder:GetChildren()) do
+                plantModel:IsA("Model")
                 local fruitsFolder = plantModel:FindFirstChild("Fruits")
                 if fruitsFolder then
-                    for _, fruitModel in ipairs(fruitsFolder:GetChildren()) do fruitModel:IsA("Model")
+                    for _, fruitModel in ipairs(fruitsFolder:GetChildren()) do
+                        fruitModel:IsA("Model")
                         -- Create a unique identifier for this fruit model (e.g., full path)
                         local modelPath = fruitModel:GetFullName()
 
@@ -1153,10 +1409,7 @@ local function checkForMutations()
                                     processedMutations[modelPath][mutation] = true
                                     -- Send webhook notification for new mutation
                                     sendWebhookNotification(
-                                        plantModel.Name,
-                                        mutation,
-                                        farm.Name
-                                    )
+                                        plantModel.Name, mutation, farm.Name)
                                     -- Optional: Add a short delay to avoid rate limits
                                     wait(0.5) -- Adjust based on Discord's rate limit (e.g., 30 req/min)
                                 end
@@ -1179,41 +1432,48 @@ end
 -- UI Setup with WindUI
 local WindUI = loadstring(game:HttpGet("https://github.com/Footagesus/WindUI/releases/latest/download/main.lua"))()
 
+local function GetThemeProperty(property)
+    if not WindUI or not WindUI.Themes or not WindUI.Themes.Current or not WindUI.Themes.Current[property] then
+        warn("Theme property '" .. property .. "' is nil, using fallback")
+        return Color3.fromRGB(255, 255, 255) -- Default fallback
+    end
+    return WindUI.Themes.Current[property]
+end
+
 local function gradient(text, startColor, endColor)
     local result = ""
-    local length = #text
+    local length = # text
     for i = 1, length do
         local t = (i - 1) / math.max(length - 1, 1)
         local r = math.floor((startColor.R + (endColor.R - startColor.R) * t) * 255)
         local g = math.floor((startColor.G + (endColor.G - startColor.G) * t) * 255)
         local b = math.floor((startColor.B + (endColor.B - startColor.B) * t) * 255)
         local char = text:sub(i, i)
-        result = result .. "<font color=\"rgb(" .. r ..", " .. g .. ", " .. b .. ")\">" .. char .. "</font>"
+        result = result .. "<font color=\"rgb(" .. r .. ", " .. g .. ", " .. b .. ")\">" .. char .. "</font>"
     end
     return result
 end
 
 local Confirmed = false
 WindUI:Popup({
-    Title = "Welcome to Grow a Garden!",
+    Title = "Welcome to grow a garden",
     Icon = "info",
-    Content = "This is the " .. gradient("PolleserHub", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " UI for Grow a Garden",
+    Content = "This is the best " .. gradient("hub", Color3.fromHex("#00FF87"), Color3.fromHex("#60EFFF")) .. " for gag",
     Buttons = {
         {
             Title = "Cancel",
-            Variant = "Secondary",
-            Callback = function() end
+            --Icon = "",
+            Callback = function() end,
+            Variant = "Secondary", -- Primary, Secondary, Tertiary
         },
         {
             Title = "Continue",
             Icon = "arrow-right",
             Callback = function() Confirmed = true end,
-            Variant = "Primary"
+            Variant = "Primary", -- Primary, Secondary, Tertiary
         }
     }
 })
-
-repeat wait() until Confirmed
 
 local Window = WindUI:CreateWindow({
     Title = "Grow a Garden | PolleserHub",
@@ -1222,22 +1482,41 @@ local Window = WindUI:CreateWindow({
     Folder = "PolleserHub",
     Size = UDim2.fromOffset(580, 460),
     Transparent = true,
-    Theme = "Ocean",
+    Theme = "Default", -- Changed to a default theme to avoid nil errors
     User = {
         Enabled = true,
-        Callback = function() print("User clicked") end,
+        Callback = function()
+            print("User clicked")
+        end,
         Anonymous = true
     },
     SideBarWidth = 200,
     HasOutline = true,
     KeySystem = {
         Key = {
-            "GaGBNfidudhdbKsksjd", "TesterKey000104", "PermKey001827367281", "PermKey161892947188",
-            "PermKey929474728199", "PermKey199293747291", "PermKey189193747381", "PermKey947493973892",
-            "PermKey183947749292", "PermKey648291927377", "PermKey179104847372", "PermKey632892938488",
-            "PermKey940402727289", "PermKey059472626183", "PermKey950492717183", "PermKey050472719199",
-            "PermKey500372628394", "PermKey040381618030", "PermKey508271728394", "PermKey192747483929",
-            "PermKey728199487473", "PermKey010284746371", "PermKey101082736282"
+            "GaGBNfidudhdbKsksjd",
+            "TesterKey000104",
+            "PermKey001827367281",
+            "PermKey161892947188",
+            "PermKey929474728199",
+            "PermKey199293747291",
+            "PermKey189193747381",
+            "PermKey947493973892",
+            "PermKey183947749292",
+            "PermKey648291927377",
+            "PermKey179104847372",
+            "PermKey632892938488",
+            "PermKey940402727289",
+            "PermKey059472626183",
+            "PermKey950492717183",
+            "PermKey050472719199",
+            "PermKey500372628394",
+            "PermKey040381618030",
+            "PermKey508271728394",
+            "PermKey192747483929",
+            "PermKey728199487473",
+            "PermKey010284746371",
+            "PermKey101082736282"
         },
         Note = "To get the Script's Key, join our Discord server: https://discord.gg/dmBzVaRrD3",
         SaveKey = true
@@ -1255,24 +1534,58 @@ Window:EditOpenButton({
 
 -- Tabs
 local Tabs = {
-    MainTab = Window:Tab({ Title = "Main", Icon = "flower", Desc = "Main automation features" }),
-    ShopTab = Window:Tab({ Title = "Shop", Icon = "shopping-cart", Desc = "Shop and purchase options" }),
-    PlayerTab = Window:Tab({ Title = "Players", Icon = "user", Desc = "Player movement and settings" }),
-    MiscTab = Window:Tab({ Title = "Miscellaneous", Icon = "list", Desc = "Additional features" }),
-    SpawnerTab = Window:Tab({ Title = "Spawner", Icon = "paw-print", Desc = "Spawn seeds and pets" }),
-    VisualsTab = Window:Tab({ Title = "Visuals", Icon = "eye", Desc = "Visual enhancements and ESP" })
+    MainTab = Window:Tab({
+        Title = "Main",
+        Icon = "flower",
+        Desc = "Main automation features"
+    }),
+    ShopTab = Window:Tab({
+        Title = "Shop",
+        Icon = "shopping-cart",
+        Desc = "Shop and purchase options"
+    }),
+    PlayerTab = Window:Tab({
+        Title = "Players",
+        Icon = "user",
+        Desc = "Player movement and settings"
+    }),
+    MiscTab = Window:Tab({
+        Title = "Miscellaneous",
+        Icon = "list",
+        Desc = "Additional features"
+    }),
+    SpawnerTab = Window:Tab({
+        Title = "Spawner",
+        Icon = "paw-print",
+        Desc = "Spawn seeds and pets"
+    }),
+    VisualsTab = Window:Tab({
+        Title = "Visuals",
+        Icon = "eye",
+        Desc = "Visual enhancements and ESP"
+    })
 }
 
 Window:SelectTab(1)
 
 -- Main Tab
-Tabs.MainTab:Paragraph({ Title = "Auto Farm", Desc = "Automation features for farming" })
+Tabs.MainTab:Paragraph({
+    Title = "Auto Farm",
+    Desc = "Automation features for farming"
+})
 Tabs.MainTab:Toggle({
     Title = "Auto Farm",
     Value = false,
     Callback = function(state)
         autoFarmEnabled = state
-        if state then instantFarm() else if farmThread then task.cancel(farmThread) farmThread = nil end end
+        if state then
+            instantFarm()
+        else
+            if farmThread then
+                task.cancel(farmThread)
+                farmThread = nil
+            end
+        end
     end
 })
 Tabs.MainTab:Toggle({
@@ -1286,7 +1599,14 @@ Tabs.MainTab:Toggle({
     Value = false,
     Callback = function(state)
         fastClickEnabled = state
-        if state then fastClickFarm() else if fastClickThread then task.cancel(fastClickThread) fastClickThread = nil end end
+        if state then
+            fastClickFarm()
+        else
+            if fastClickThread then
+                task.cancel(fastClickThread)
+                fastClickThread = nil
+            end
+        end
     end
 })
 Tabs.MainTab:Toggle({
@@ -1298,7 +1618,9 @@ Tabs.MainTab:Toggle({
         updateFarmData()
         for _, farm in pairs(farms) do
             for _, obj in ipairs(farm:GetDescendants()) do
-                if obj:IsA("ProximityPrompt") then handleNewPrompt(obj) end
+                if obj:IsA("ProximityPrompt") then
+                    handleNewPrompt(obj)
+                end
             end
         end
         if spamE then
@@ -1312,9 +1634,16 @@ Tabs.MainTab:Toggle({
                                 if prompt:IsA("ProximityPrompt") and prompt.Enabled and prompt.KeyboardKeyCode == Enum.KeyCode.E then
                                     local targetPos
                                     local parent = prompt.Parent
-                                    if parent:IsA("BasePart") then targetPos = parent.Position
-                                    elseif parent:IsA("Model") and parent:FindFirstChild("HumanoidRootPart") then targetPos = parent.HumanoidRootPart.Position end
-                                    if targetPos and (root.Position - targetPos).Magnitude <= RANGE then pcall(function() fireproximityprompt(prompt, 1, true) end) end
+                                    if parent:IsA("BasePart") then
+                                        targetPos = parent.Position
+                                    elseif parent:IsA("Model") and parent:FindFirstChild("HumanoidRootPart") then
+                                        targetPos = parent.HumanoidRootPart.Position
+                                    end
+                                    if targetPos and (root.Position - targetPos).Magnitude <= RANGE then
+                                        pcall(function()
+                                            fireproximityprompt(prompt, 1, true)
+                                        end)
+                                    end
                                 end
                             end
                         end
@@ -1324,15 +1653,23 @@ Tabs.MainTab:Toggle({
         else
             for prompt, data in pairs(promptTracker) do
                 if prompt:IsA("ProximityPrompt") then
-                    pcall(function() prompt.RequiresLineOfSight = data.originalRequiresLOS prompt.Exclusivity = data.originalExclusivity end)
+                    pcall(function()
+                        prompt.RequiresLineOfSight = data.originalRequiresLOS
+                        prompt.Exclusivity = data.originalExclusivity
+                    end)
                 end
             end
-            if collectionThread then task.cancel(collectionThread) collectionThread = nil end
+            if collectionThread then
+                task.cancel(collectionThread)
+                collectionThread = nil
+            end
         end
     end
 })
 descendantConnection = workspace.DescendantAdded:Connect(function(obj)
-    if obj:IsA("ProximityPrompt") and isInsideFarm(obj) then handleNewPrompt(obj) end
+    if obj:IsA("ProximityPrompt") and isInsideFarm(obj) then
+        handleNewPrompt(obj)
+    end
 end)
 Tabs.MainTab:Toggle({
     Title = "Auto Sell",
@@ -1343,13 +1680,20 @@ Tabs.MainTab:Toggle({
         if autoSellEnabled then
             autoSellThread = task.spawn(function()
                 while autoSellEnabled and task.wait(1) do
-                    if isInventoryFull() then sellItems() end
+                    if isInventoryFull() then
+                        sellItems()
+                    end
                 end
             end)
-        elseif autoSellThread then task.cancel(autoSellThread) end
+        elseif autoSellThread then
+            task.cancel(autoSellThread)
+        end
     end
 })
-Tabs.MainTab:Paragraph({ Title = "Exclude Mutations or Fruits", Desc = "Configure which mutations or fruits to ignore" })
+Tabs.MainTab:Paragraph({
+    Title = "Exclude Mutations or Fruits",
+    Desc = "Configure which mutations or fruits to ignore"
+})
 Tabs.MainTab:Dropdown({
     Title = "Exclude Mutations In Collecting",
     Values = mutationOptions,
@@ -1378,9 +1722,18 @@ Tabs.MainTab:Toggle({
         updatePromptsForMutations()
     end
 })
-Tabs.MainTab:Paragraph({ Title = "Insta Sell", Desc = "Instantly sell items or pets" })
-Tabs.MainTab:Button({ Title = "Insta Sell", Callback = SellAll })
-Tabs.MainTab:Button({ Title = "Insta Sell Hand", Callback = HSell })
+Tabs.MainTab:Paragraph({
+    Title = "Insta Sell",
+    Desc = "Instantly sell items or pets"
+})
+Tabs.MainTab:Button({
+    Title = "Insta Sell",
+    Callback = SellAll
+})
+Tabs.MainTab:Button({
+    Title = "Insta Sell Hand",
+    Callback = HSell
+})
 Tabs.MainTab:Button({
     Title = "Sell Pets",
     Desc = "Sells all eligible pets in your backpack that are not favorited",
@@ -1412,7 +1765,10 @@ Tabs.MainTab:Button({
         })
     end
 })
-Tabs.MainTab:Paragraph({ Title = "Others", Desc = "Additional features" })
+Tabs.MainTab:Paragraph({
+    Title = "Others",
+    Desc = "Additional features"
+})
 Tabs.MainTab:Dropdown({
     Title = "Select Mutations (Auto Fav)",
     Values = mutationOptions,
@@ -1421,7 +1777,9 @@ Tabs.MainTab:Dropdown({
     AllowNone = true,
     Callback = function(Options)
         selectedMutations = Options
-        if autoFavoriteEnabled then processBackpack() end
+        if autoFavoriteEnabled then
+            processBackpack()
+        end
     end
 })
 Tabs.MainTab:Toggle({
@@ -1429,7 +1787,12 @@ Tabs.MainTab:Toggle({
     Value = false,
     Callback = function(Value)
         autoFavoriteEnabled = Value
-        if Value then setupAutoFavorite() elseif connection then connection:Disconnect() connection = nil end
+        if Value then
+            setupAutoFavorite()
+        elseif connection then
+            connection:Disconnect()
+            connection = nil
+        end
     end
 })
 Tabs.MainTab:Button({
@@ -1451,10 +1814,16 @@ Tabs.MainTab:Toggle({
     Value = false,
     Callback = OneClickRemove
 })
-Tabs.MainTab:Button({ Title = "Stop Grow-ALL Pop-up", Callback = DestroySign })
+Tabs.MainTab:Button({
+    Title = "Stop Grow-ALL Pop-up",
+    Callback = DestroySign
+})
 
 -- Shop Tab
-Tabs.ShopTab:Paragraph({ Title = "Auto Buy", Desc = "Automate purchasing of items" })
+Tabs.ShopTab:Paragraph({
+    Title = "Auto Buy",
+    Desc = "Automate purchasing of items"
+})
 Tabs.ShopTab:Dropdown({
     Title = "Select Seeds",
     Desc = "Choose which seeds to auto buy",
@@ -1462,7 +1831,9 @@ Tabs.ShopTab:Dropdown({
     Value = selectedSeeds,
     Multi = true,
     AllowNone = true,
-    Callback = function(Options) selectedSeeds = Options end
+    Callback = function(Options)
+        selectedSeeds = Options
+    end
 })
 Tabs.ShopTab:Dropdown({
     Title = "Select Gear",
@@ -1471,7 +1842,9 @@ Tabs.ShopTab:Dropdown({
     Value = selectedGears,
     Multi = true,
     AllowNone = true,
-    Callback = function(Options) selectedGears = Options end
+    Callback = function(Options)
+        selectedGears = Options
+    end
 })
 Tabs.ShopTab:Dropdown({
     Title = "Select Twilight",
@@ -1480,7 +1853,9 @@ Tabs.ShopTab:Dropdown({
     Value = selectedTwilight,
     Multi = true,
     AllowNone = true,
-    Callback = function(Options) selectedTwilight = Options end
+    Callback = function(Options)
+        selectedTwilight = Options
+    end
 })
 Tabs.ShopTab:Toggle({
     Title = "Auto Buy",
@@ -1537,16 +1912,28 @@ Tabs.ShopTab:Toggle({
     Value = false,
     Callback = function(value)
         Autoegg_autoBuyEnabled = value
-        if Autoegg_autoBuyEnabled then Autoegg_firstRun = true Autoegg_autoBuyEggs() end
+        if Autoegg_autoBuyEnabled then
+            Autoegg_firstRun = true
+            Autoegg_autoBuyEggs()
+        end
     end
 })
-Tabs.ShopTab:Paragraph({ Title = "Cosmetic", Desc = "Cosmetic shop options" })
-Tabs.ShopTab:Button({ Title = "Open Cosmetic Shop", Callback = OpenCosmetic })
+Tabs.ShopTab:Paragraph({
+    Title = "Cosmetic",
+    Desc = "Cosmetic shop options"
+})
+Tabs.ShopTab:Button({
+    Title = "Open Cosmetic Shop",
+    Callback = OpenCosmetic
+})
 Tabs.ShopTab:Button({
     Title = "Buy Cosmetic Items x5",
     Desc = "In Stock it'll also drain your sheckles",
     Callback = function()
-        for _, s in ipairs({lp.PlayerGui.CosmeticShop_UI.CosmeticShop.Main.Holder.Shop.ContentFrame.TopSegment, lp.PlayerGui.CosmeticShop_UI.CosmeticShop.Main.Holder.Shop.ContentFrame.BottomSegment}) do
+        for _, s in ipairs({
+            lp.PlayerGui.CosmeticShop_UI.CosmeticShop.Main.Holder.Shop.ContentFrame.TopSegment,
+            lp.PlayerGui.CosmeticShop_UI.CosmeticShop.Main.Holder.Shop.ContentFrame.BottomSegment
+        }) do
             for _ = 1, 5 do
                 for _, f in ipairs(s:GetChildren()) do
                     if f:IsA("Frame") then
@@ -1566,26 +1953,68 @@ Tabs.ShopTab:Button({
         local player = Players.LocalPlayer
         local character = player.Character
         if character and character:FindFirstChild("HumanoidRootPart") then
-            character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-287, 3, -15))
+            character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(- 287, 3, - 15))
         else
             warn("Character or HumanoidRootPart not found.")
         end
     end
 })
-Tabs.ShopTab:Paragraph({ Title = "Events", Desc = "Event shop options" })
-Tabs.ShopTab:Button({ Title = "Open BloodShop", Callback = OpenBloodShop })
-Tabs.ShopTab:Button({ Title = "Open Twilight Shop", Callback = OpenTwilight })
-Tabs.ShopTab:Button({ Title = "Open Twilight Quest", Callback = OpenTwilightQuest })
-Tabs.ShopTab:Paragraph({ Title = "Menus", Desc = "Open various shops and menus" })
-Tabs.ShopTab:Button({ Title = "Open Egg Shop 1", Desc = "Click again to close", Callback = EggShop1 })
-Tabs.ShopTab:Button({ Title = "Open Egg Shop 2", Desc = "Click again to close", Callback = EggShop2 })
-Tabs.ShopTab:Button({ Title = "Open Egg Shop 3", Desc = "Click again to close", Callback = EggShop3 })
-Tabs.ShopTab:Button({ Title = "Open Seed Shop", Desc = "Click again to close", Callback = OpenShop })
-Tabs.ShopTab:Button({ Title = "Open Gear Shop", Desc = "Click again to close", Callback = OpenGearShop })
-Tabs.ShopTab:Button({ Title = "Open Quest", Desc = "Click again to close", Callback = OpenQuest })
+Tabs.ShopTab:Paragraph({
+    Title = "Events",
+    Desc = "Event shop options"
+})
+Tabs.ShopTab:Button({
+    Title = "Open BloodShop",
+    Callback = OpenBloodShop
+})
+Tabs.ShopTab:Button({
+    Title = "Open Twilight Shop",
+    Callback = OpenTwilight
+})
+Tabs.ShopTab:Button({
+    Title = "Open Twilight Quest",
+    Callback = OpenTwilightQuest
+})
+Tabs.ShopTab:Paragraph({
+    Title = "Menus",
+    Desc = "Open various shops and menus"
+})
+Tabs.ShopTab:Button({
+    Title = "Open Egg Shop 1",
+    Desc = "Click again to close",
+    Callback = EggShop1
+})
+Tabs.ShopTab:Button({
+    Title = "Open Egg Shop 2",
+    Desc = "Click again to close",
+    Callback = EggShop2
+})
+Tabs.ShopTab:Button({
+    Title = "Open Egg Shop 3",
+    Desc = "Click again to close",
+    Callback = EggShop3
+})
+Tabs.ShopTab:Button({
+    Title = "Open Seed Shop",
+    Desc = "Click again to close",
+    Callback = OpenShop
+})
+Tabs.ShopTab:Button({
+    Title = "Open Gear Shop",
+    Desc = "Click again to close",
+    Callback = OpenGearShop
+})
+Tabs.ShopTab:Button({
+    Title = "Open Quest",
+    Desc = "Click again to close",
+    Callback = OpenQuest
+})
 
 -- Player Tab
-Tabs.PlayerTab:Paragraph({ Title = "Movement", Desc = "Player movement settings" })
+Tabs.PlayerTab:Paragraph({
+    Title = "Movement",
+    Desc = "Player movement settings"
+})
 Tabs.PlayerTab:Toggle({
     Title = "Fly",
     Value = false,
@@ -1603,7 +2032,11 @@ Tabs.PlayerTab:Toggle({
 })
 Tabs.PlayerTab:Slider({
     Title = "Player Speed",
-    Value = { Min = 0, Max = 200, Default = 16 },
+    Value = {
+        Min = 0,
+        Max = 200,
+        Default = 16
+    },
     Callback = function(value)
         local char = lp.Character
         if char and char:FindFirstChildOfClass("Humanoid") then
@@ -1613,7 +2046,11 @@ Tabs.PlayerTab:Slider({
 })
 Tabs.PlayerTab:Slider({
     Title = "Jump Height",
-    Value = { Min = 0, Max = 200, Default = 50 },
+    Value = {
+        Min = 0,
+        Max = 200,
+        Default = 50
+    },
     Callback = function(value)
         local char = lp.Character
         if char and char:FindFirstChildOfClass("Humanoid") then
@@ -1623,7 +2060,10 @@ Tabs.PlayerTab:Slider({
 })
 
 -- Misc Tab
-Tabs.MiscTab:Paragraph({ Title = "Plants", Desc = "Plant automation settings" })
+Tabs.MiscTab:Paragraph({
+    Title = "Plants",
+    Desc = "Plant automation settings"
+})
 Tabs.MiscTab:Dropdown({
     Title = "Select Seeds to Plant",
     Desc = "Seeds to plant",
@@ -1631,7 +2071,9 @@ Tabs.MiscTab:Dropdown({
     Value = {},
     Multi = true,
     AllowNone = true,
-    Callback = function(opts) SelectedSeeds = opts end
+    Callback = function(opts)
+        SelectedSeeds = opts
+    end
 })
 Tabs.MiscTab:Toggle({
     Title = "Auto Plant",
@@ -1639,7 +2081,9 @@ Tabs.MiscTab:Toggle({
     Value = false,
     Callback = function(state)
         AutoPlanting = state
-        if state then startAutoPlanting() end
+        if state then
+            startAutoPlanting()
+        end
     end
 })
 Tabs.MiscTab:Toggle({
@@ -1651,11 +2095,16 @@ Tabs.MiscTab:Button({
     Title = "Submit All Moon Fruits",
     Desc = "Submits All Moon Fruits Of Yours",
     Callback = function()
-        local args = { "SubmitAllPlants" }
+        local args = {
+            "SubmitAllPlants"
+        }
         game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("NightQuestRemoteEvent"):FireServer(unpack(args))
     end
 })
-Tabs.MiscTab:Paragraph({ Title = "Extras", Desc = "Additional utilities" })
+Tabs.MiscTab:Paragraph({
+    Title = "Extras",
+    Desc = "Additional utilities"
+})
 Tabs.MiscTab:Button({
     Title = "AntiAfk",
     Desc = "Press Once Only",
@@ -1685,14 +2134,22 @@ Tabs.MiscTab:Button({
         })
     end
 })
-Tabs.MiscTab:Button({ Title = "ServerHop V2", Callback = ServerHop })
-Tabs.MiscTab:Paragraph({ Title = "Purchase Stuff", Desc = "Purchase items with Robux (DM if you receive the item)" })
+Tabs.MiscTab:Button({
+    Title = "ServerHop V2",
+    Callback = ServerHop
+})
+Tabs.MiscTab:Paragraph({
+    Title = "Purchase Stuff",
+    Desc = "Purchase items with Robux (DM if you receive the item)"
+})
 Tabs.MiscTab:Button({
     Title = "Buy Candy Blossom With Robux",
     Desc = "Click to purchase",
     Callback = function()
         local MarketplaceService = game:GetService("MarketplaceService")
-        pcall(function() MarketplaceService:PromptProductPurchase(lp, ProductId) end)
+        pcall(function()
+            MarketplaceService:PromptProductPurchase(lp, ProductId)
+        end)
     end
 })
 Tabs.MiscTab:Button({
@@ -1700,7 +2157,9 @@ Tabs.MiscTab:Button({
     Desc = "Click to purchase",
     Callback = function()
         local MarketplaceService = game:GetService("MarketplaceService")
-        pcall(function() MarketplaceService:PromptProductPurchase(lp, 3277000452) end)
+        pcall(function()
+            MarketplaceService:PromptProductPurchase(lp, 3277000452)
+        end)
     end
 })
 Tabs.MiscTab:Button({
@@ -1708,7 +2167,9 @@ Tabs.MiscTab:Button({
     Desc = "Click to purchase",
     Callback = function()
         local MarketplaceService = game:GetService("MarketplaceService")
-        pcall(function() MarketplaceService:PromptProductPurchase(lp, 3290577633) end)
+        pcall(function()
+            MarketplaceService:PromptProductPurchase(lp, 3290577633)
+        end)
     end
 })
 Tabs.MiscTab:Button({
@@ -1716,219 +2177,8 @@ Tabs.MiscTab:Button({
     Desc = "Click to purchase",
     Callback = function()
         local MarketplaceService = game:GetService("MarketplaceService")
-        pcall(function() MarketplaceService:PromptProductPurchase(lp, 3290619407) end)
-    end
-})
-
--- Spawner Tab
-Tabs.SpawnerTab:Paragraph({ Title = "Seed Spawner", Desc = "Spawn custom seeds" })
-Tabs.SpawnerTab:Input({
-    Title = "Seed Name",
-    Desc = "Without the Seed (e.g., Candy Blossom)",
-    Placeholder = "Name",
-    Value = "",
-    Callback = function(t) seedName = t end
-})
-Tabs.SpawnerTab:Input({
-    Title = "Quantity",
-    Placeholder = "Amount",
-    Value = "",
-    Callback = function(t) seedAmount = tonumber(t) or 0 end
-})
-Tabs.SpawnerTab:Button({
-    Title = "Spawn Seeds",
-    Callback = function()
-        if seedName == "" or seedAmount <= 0 then return end
-        local m = game:GetService("ReplicatedStorage"):FindFirstChild("Seed_Models"):FindFirstChild(seedName)
-        if not m then warn("no model:", seedName) return end
-        local t = Instance.new("Tool")
-        t.Name = seedName .. " Seed [x" .. seedAmount .. "]"
-        t.RequiresHandle = true
-        local c = m:Clone()
-        local h = c:IsA("Part") and c or c:FindFirstChildWhichIsA("Part")
-        if not h then warn("no handle lololol") return end
-        h.Name = "Handle"
-        h.Anchored = false
-        h.CanCollide = false
-        h.Massless = true
-        h.Parent = t
-        t.Grip = CFrame.new(0.2, -0.449, 0.232) * CFrame.Angles(0, math.rad(0), 0)
-        t.Parent = game.Players.LocalPlayer.Backpack
-    end
-})
-Tabs.SpawnerTab:Paragraph({ Title = "Pet Spawner", Desc = "Spawn custom pets (visual only)" })
-Tabs.SpawnerTab:Input({
-    Title = "Pet Name",
-    Placeholder = "e.g., Raccoon",
-    Value = "",
-    Callback = function(t) PetName = t end
-})
-Tabs.SpawnerTab:Input({
-    Title = "Pet Weight",
-    Placeholder = "e.g., 2",
-    Value = "",
-    Callback = function(t) PetWeight = t end
-})
-Tabs.SpawnerTab:Input({
-    Title = "Pet Age",
-    Placeholder = "e.g., 3",
-    Value = "",
-    Callback = function(t) PetAge = t end
-})
-Tabs.SpawnerTab:Button({
-    Title = "Spawn Pet",
-    Callback = function()
-        local player = Players.LocalPlayer
-        local backpack = player:WaitForChild("Backpack")
-        local RS = game:GetService("ReplicatedStorage")
-        local Models = RS:WaitForChild("Assets"):WaitForChild("Models"):WaitForChild("PetAssets")
-        local Anims = RS:WaitForChild("Assets"):WaitForChild("Animations"):WaitForChild("PetAnimations")
-        local petModel = Models:FindFirstChild(PetName)
-        if not petModel then
-            WindUI:Notify({
-                Title = "Error",
-                Content = "Pet not found: " .. PetName,
-                Duration = 3,
-                Icon = "alert-triangle"
-            })
-            return
-        end
-        local pet = petModel:Clone()
-        local root = pet:FindFirstChild("RootPart")
-        if not root then
-            WindUI:Notify({
-                Title = "Error",
-                Content = "No RootPart found in pet model",
-                Duration = 3,
-                Icon = "alert-triangle"
-            })
-            return
-        end
-        root.Name = "Handle"
-        pet.PrimaryPart = root
-        local weight = tonumber(PetWeight) or 1
-        pet:ScaleTo(1 + 0.05 * (weight / 0.5) + (weight - math.floor(weight)))
-        local tool = Instance.new("Tool")
-        tool.Name = ("%s\n[%s KG]\n[Age %s]"):format(PetName, PetWeight, PetAge)
-        tool.RequiresHandle = true
-        if PetName:lower() == "dragonfly" then
-            tool.Grip = CFrame.new(0, -3, 0) * CFrame.Angles(math.rad(90), 0, 29.7)
-        else
-            tool.Grip = CFrame.Angles(math.rad(90), 0, math.rad(-90))
-        end
-        tool.Parent = backpack
-        for _, part in ipairs(pet:GetChildren()) do
-            part.Parent = tool
-        end
-        pet:Destroy()
-        tool.Equipped:Connect(function()
-            local animCtrl = tool:FindFirstChildWhichIsA("AnimationController", true) or Instance.new("AnimationController", tool)
-            animCtrl.Name = PetName .. "Controller"
-            local animator = animCtrl:FindFirstChildOfClass("Animator") or Instance.new("Animator", animCtrl)
-            local animName = ({["fox"] = true, ["red fox"] = true})[PetName:lower()] and "Fox" or PetName
-            local folder = Anims:FindFirstChild(animName)
-            if folder and folder:FindFirstChild("Idle") then
-                local anim = Instance.new("Animation", tool)
-                anim.AnimationId = folder.Idle.AnimationId
-                local track = animator:LoadAnimation(anim)
-                track.Looped = true
-                track:Play()
-            else
-                warn("No idle animation found for: " .. animName)
-            end
+        pcall(function()
+            MarketplaceService:PromptProductPurchase(lp, 3290619407)
         end)
-        WindUI:Notify({
-            Title = "Success",
-            Content = "Spawned pet '" .. PetName .. "' in your backpack!",
-            Duration = 3,
-            Icon = "check"
-        })
     end
 })
-Tabs.SpawnerTab:Paragraph({ Title = "Notes", Desc = "Pet spawning is visual only and may not have full functionality." })
-
--- Visuals Tab
-Tabs.VisualsTab:Paragraph({ Title = "Mutation ESP", Desc = "Visualize mutations on fruits" })
-Tabs.VisualsTab:Toggle({
-    Title = "Enable ESP",
-    Value = false,
-    Callback = function(state)
-        state.espEnabled = state
-        updateESP()
-        if state then
-            task.spawn(function()
-                while state.espEnabled do
-                    updateESP()
-                    checkForMutations()
-                    task.wait(1)
-                end
-            end)
-        end
-    end
-})
-Tabs.VisualsTab:Dropdown({
-    Title = "Select Mutations for ESP",
-    Values = mutationOptions,
-    Value = state.selectedMutations,
-    Multi = true,
-    AllowNone = true,
-    Callback = function(selectedOptions)
-        state.selectedMutations = selectedOptions
-        updateESP()
-    end
-})
-Tabs.VisualsTab:Input({
-    Title = "Webhook URL",
-    Placeholder = "Enter Discord webhook URL",
-    Value = "",
-    Callback = function(url)
-        state.webhookUrl = url
-        WindUI:Notify({
-            Title = "Webhook Updated",
-            Content = "Webhook URL set successfully.",
-            Duration = 3,
-            Icon = "check"
-        })
-    end
-})
-Tabs.VisualsTab:Paragraph({ Title = "Mutation Counts", Desc = "Displays the count of each mutation type" })
-Tabs.VisualsTab:Button({
-    Title = "Update Mutation Counts",
-    Callback = function()
-        local countText = updateMutationCounts()
-        WindUI:Notify({
-            Title = "Mutation Counts",
-            Content = countText,
-            Duration = 5,
-            Icon = "info"
-        })
-    end
-})
-
--- Cleanup on Script Termination
-game:BindToClose(function()
-    -- Disconnect connections
-    if farmThread then task.cancel(farmThread) end
-    if fastClickThread then task.cancel(fastClickThread) end
-    if autoSellThread then task.cancel(autoSellThread) end
-    if HarvestConnection then HarvestConnection:Disconnect() end
-    if flightConnection then flightConnection:Disconnect() end
-    if collectionThread then task.cancel(collectionThread) end
-    if descendantConnection then descendantConnection:Disconnect() end
-    if connection then connection:Disconnect() end
-    if claimConnection then claimConnection:Disconnect() end
-    -- Disable fly and noclip
-    Fly(false)
-    ToggleNoclip(false)
-    -- Clear ESP
-    for _, billboard in pairs(state.espBillboards) do billboard:Destroy() end
-    for _, highlight in pairs(state.espHighlights) do highlight:Destroy() end
-    table.clear(state.espBillboards)
-    table.clear(state.espHighlights)
-    -- Restore prompts
-    for prompt, data in pairs(promptTracker) do
-        if prompt:IsA("ProximityPrompt") then
-            pcall(function() prompt.RequiresLineOfSight = data.originalRequiresLOS prompt.Exclusivity = data.originalExclusivity end)
-        end
-    end
-end)
