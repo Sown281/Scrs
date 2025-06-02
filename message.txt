@@ -8,7 +8,7 @@ local minimizeUI = Enum.KeyCode.RightAlt
 
 -- 🟢 Create Main UI
 local Window = Fluent:CreateWindow({
-    Title = "Hutao hub [FREE]",
+    Title = "Xuan beo hub",
     SubTitle = "Dead Rails",
     TabWidth = 160,
     Size = UDim2.fromOffset(480, 360),
@@ -19,9 +19,9 @@ local Window = Fluent:CreateWindow({
 
 -- Tabs
 local Tabs = {
-    FarT = Window:AddTab({ Title = "Farm", Icon = "rbxassetid://121302760641013" }),
-    Ma = Window:AddTab({ Title = "Main", Icon = "rbxassetid://121302760641013" }),
-    Ite = Window:AddTab({ Title = "Items", Icon = "rbxassetid://121302760641013" }),
+    FarT = Window:AddTab({ Title = "xuan beo", Icon = "rbxassetid://121302760641013" }),
+    Ma = Window:AddTab({ Title = "sunny beo", Icon = "rbxassetid://121302760641013" }),
+    Ite = Window:AddTab({ Title = ". dz", Icon = "rbxassetid://121302760641013" }),
     TpT = Window:AddTab({ Title = "Teleport", Icon = "rbxassetid://121302760641013" }),
     Player = Window:AddTab({ Title = "Player", Icon = "rbxassetid://121302760641013" }),
     Misc = Window:AddTab({ Title = "Misc", Icon = "rbxassetid://121302760641013" }),
@@ -3366,7 +3366,7 @@ Button.InputChanged:Connect(function(input)
     end
 end)
 
-
-           
-
+print("Check console con cak")
+print("sunny beo\nxuan beo")
+print("cho . lam mod di")
               
