@@ -1,7 +1,4 @@
--- ts file was generated at discord.gg/25ms
 
-
-setclipboard("https://discord.gg/dmBzVaRrD3")
 
 -- Services
 local Workspace = game:GetService("Workspace")
